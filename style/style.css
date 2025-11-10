@@ -1,0 +1,136 @@
+/* ===== VARIÁVEIS DE TEMA ===== */
+:root {
+  --bg-color: #121212;
+  --accent-color: #4CAF50;
+  --text-color: #ffffff;
+  --text-light: #cccccc;
+  --transition: all 0.3s ease;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: url("/LInkTree-Dev/image/premium_photo-1756717400740-262e968da579.avif") 
+              center/cover fixed no-repeat;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  width: 340px;
+  max-width: 90%;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  transition: var(--transition);
+}
+
+.container:hover {
+  transform: scale(1.03);
+}
+
+/* ===== FOTO DE PERFIL ===== */
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--text-color);
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.profile:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
+/* ===== TÍTULO E SUBTÍTULO ===== */
+.name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.subTitle {
+  margin: 15px 0 30px;
+  font-size: 1.0rem;
+  color: var(--text-light);
+}
+
+/* ===== LINKS ===== */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.link:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+  border-color: var(--text-color);
+  transform: translateY(-4px);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== RODAPÉ ===== */
+.footer {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .profile {
+    width: 95px;
+    height: 95px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .subTitle {
+    font-size: 1rem;
+  }
+}
