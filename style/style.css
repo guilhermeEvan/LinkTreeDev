@@ -17,7 +17,7 @@
 /* ===== BODY ===== */
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: url("/image/premium_photo-1756717400740-262e968da579.avif") 
+  background: url("image/premium_photo-1756717400740-262e968da579.avif") 
               center/cover fixed no-repeat;
   background-color: var(--bg-color);
   color: var(--text-color);
