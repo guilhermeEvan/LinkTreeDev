@@ -1,7 +1,7 @@
 /* ===== VARIÁVEIS DE TEMA ===== */
 :root {
   --bg-color: #121212;
-  --accent-color: #4CAF50;
+  --accent-color: #3e8a40;
   --text-color: #ffffff;
   --text-light: #cccccc;
   --transition: all 0.3s ease;
@@ -17,7 +17,7 @@
 /* ===== BODY ===== */
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: url("../image/premium_photo-1756717400740-262e968da579.avif") 
+  background: url("../image/fundoteste2.jpeg") 
               center/cover fixed no-repeat;
   background-color: var(--bg-color);
   color: var(--text-color);
