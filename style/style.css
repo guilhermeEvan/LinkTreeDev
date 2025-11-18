@@ -1,7 +1,7 @@
 /* ===== VARIÁVEIS DE TEMA ===== */
 :root {
   --bg-color: #121212;
-  --accent-color: #3e8a40;
+  --accent-color: #2c612e;
   --text-color: #ffffff;
   --text-light: #cccccc;
   --transition: all 0.3s ease;
@@ -17,7 +17,7 @@
 /* ===== BODY ===== */
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: url("../image/fundoteste2.jpeg") 
+  background: url("../image/fundoteste3.jpg") 
               center/cover fixed no-repeat;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -30,7 +30,7 @@ body {
 /* ===== CONTAINER PRINCIPAL ===== */
 .container {
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(4px);
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
@@ -42,6 +42,7 @@ body {
 
 .container:hover {
   transform: scale(1.03);
+  backdrop-filter: blur(6px);
 }
 
 /* ===== FOTO DE PERFIL ===== */
